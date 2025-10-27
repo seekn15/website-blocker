@@ -19,7 +19,7 @@
       "redirect": { "extensionPath": "/blocked.html" }
     },
     "condition": {
-      "urlFilter": "||twitter.com",
+      "urlFilter": "||x.com",
       "resourceTypes": ["main_frame"]
     }
   },
@@ -44,6 +44,18 @@
     },
     "condition": {
       "urlFilter": "||reddit.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/blocked.html" }
+    },
+    "condition": {
+      "urlFilter": "||tiktok.com",
       "resourceTypes": ["main_frame"]
     }
   }
