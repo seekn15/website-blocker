@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Social Blocker",
+  "version": "1.0",
+  "description": "A simple extension to block distracting social media sites.",
+
+  "icons": {
+    "128": "icon-128.png"
+  },
+
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+
+  "host_permissions": [
+    "*://*.facebook.com/*",
+    "*://*.twitter.com/*",
+    "*://*.instagram.com/*",
+    "*://*.reddit.com/*",
+    "*://*.tiktok.com/*"
+  ],
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": [ "blocked.html", "style.css" ],
+      "matches": [ "<all_urls>" ]
+    }
+  ]
+}
