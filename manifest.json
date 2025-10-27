@@ -8,6 +8,11 @@
     "128": "icon-128.png"
   },
 
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icon-128.png"
+  },
+  
   "permissions": [
     "declarativeNetRequest"
   ],
